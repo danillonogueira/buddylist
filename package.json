@@ -1,0 +1,11 @@
+{
+  "name": "buddylist",
+  "version": "1.0.0",
+  "description": "Small personal contacts application with heavy UI/UX design and Clean Code principles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Danillo Lucas Nogueira",
+  "license": "ISC"
+}
