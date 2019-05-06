@@ -46,9 +46,12 @@ body {
           flex-direction: column;
 }
 
-.form__btn {
+.form__create, .form__empty, .form__delete {
   text-transform: uppercase;
   width: 50%;
-  margin: 10px 0;
+}
+
+.view__remove {
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */

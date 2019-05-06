@@ -26,9 +26,16 @@ body {
   }
 
   &__create,
-  &__clear,
+  &__empty,
   &__delete {
     text-transform: uppercase;
     width: 50%;
+  }
+}
+
+.view {
+  
+  &__remove {
+    text-transform: uppercase;
   }
 }

@@ -4,7 +4,7 @@ class Controller {
     this._contacts = new Bind(
       new Contacts(),
       new ContactsView('.view'),
-      'addContact', 'deleteContacts'
+      'registerContact', 'deleteContacts', 'removeContact'
     );
     this._formView = new FormView('.form'); 
     this.init();
@@ -27,18 +27,18 @@ class Controller {
     )
   }
 
-  registerContact() {
+  requestContactRegistering() {
     try {
       event.preventDefault();
-      this._contacts.addContact(this.createContact());
-      this.clearForm();
+      this._contacts.registerContact(this.createContact());
+      this.emptyForm();
     } catch(err) {
       console.log(err);
       alert('It was not possible to register the contact');
     }
   }
 
-  clearForm() {
+  emptyForm() {
     event.preventDefault();
     [
       this._inputName,
@@ -48,8 +48,14 @@ class Controller {
     ].forEach(input => input.value = '');  
   }
 
-  removeContacts() {
+  requestContactsRemoval() {
     event.preventDefault();
     this._contacts.deleteContacts();
+  }
+
+  requestContactRemoval(event) {
+    if (event.target.classList.contains('view__remove')) {
+      this._contacts.removeContact(parseInt(event.target.getAttribute('data-index')));     
+    }
   }
 }

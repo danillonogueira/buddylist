@@ -37,10 +37,10 @@ class FormView extends View {
         <button type="submit" class="form__create">create</button>
       </div>
       <div class="form__control">
-        <button class="form__clear">clear</button>
+        <button class="form__empty">clear</button>
       </div>
       <div class="form__control">
-        <button class="form__delete">delete</button>
+        <button class="form__delete">delete all</button>
       </div>       
     `;
   }

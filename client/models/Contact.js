@@ -7,23 +7,7 @@ class Contact {
     Object.freeze(this);
   }
 
-  getName() {
-    return this.name;
-  }
-
-  getSurame() {
-    return this.surname;
-  }
-
   getFullName() {
-    return `${this.name} ${this.surname}`;
-  }
-
-  getTel() {
-    return this.tel;
-  }
-
-  getEmail() {
-    return this.email;
+    return `${this._name} ${this._surname}`;
   }
 }

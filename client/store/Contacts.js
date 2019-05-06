@@ -13,18 +13,17 @@ class Contacts {
     console.log(this._contacts);
   }
 
-  addContact(contact) {
+  registerContact(contact) {
     this._contacts.push(contact);
     console.log(this._contacts);
   }
 
-  // editContact() {
+  removeContact(contactId) {
+    this._contacts.splice(contactId, 1);
+    console.log(this._contacts);
+  }
 
-  // }
+  editContact(id) {
 
-  // removeContact() {
-    
-  // }
-
-  
+  } 
 }
