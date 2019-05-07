@@ -11,8 +11,18 @@ class ContactsView extends View {
               <li>${contact._tel}</li>
               <li>${contact._email}</li>
             </ul>
-            <button class="view__edit"  data-index="${index}">edit</button>
-            <button class="view__remove"  data-index="${index}">remove</button>
+            <button 
+              class="view__edit" 
+              data-index="${index}"
+            >
+              edit
+            </button>
+            <button 
+              class="view__remove" 
+              data-index="${index}"
+            >
+              remove        
+            </button>
           `
         })
         .join('')

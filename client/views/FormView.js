@@ -34,7 +34,20 @@ class FormView extends View {
         >
       </div>
       <div class="form__control">       
-        <button type="submit" class="form__create">create</button>
+        <button 
+          class="form__edit" 
+          hidden
+        >
+          edit
+        </button>
+      </div>
+      <div class="form__control">       
+        <button 
+          type="submit" 
+          class="form__create"
+        >
+          create    
+        </button>
       </div>
       <div class="form__control">
         <button class="form__empty">clear</button>

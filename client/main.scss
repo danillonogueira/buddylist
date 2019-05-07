@@ -27,14 +27,18 @@ body {
 
   &__create,
   &__empty,
-  &__delete {
+  &__delete,
+  &__edit {
     text-transform: uppercase;
     width: 50%;
   }
+
+  &__edit {
+    display: none;
+  }
 }
 
-.view {
-  
+.view { 
   &__remove {
     text-transform: uppercase;
   }

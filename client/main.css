@@ -46,9 +46,13 @@ body {
           flex-direction: column;
 }
 
-.form__create, .form__empty, .form__delete {
+.form__create, .form__empty, .form__delete, .form__edit {
   text-transform: uppercase;
   width: 50%;
+}
+
+.form__edit {
+  display: none;
 }
 
 .view__remove {
