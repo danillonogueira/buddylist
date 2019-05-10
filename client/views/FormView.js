@@ -1,5 +1,5 @@
 class FormView extends View {
-  template() {
+  template(model) {
     return `
       <div class="form__control">
         <label for="name">name</label>
@@ -33,24 +33,13 @@ class FormView extends View {
           class="form__email"
         >
       </div>
-      <div class="form__control">       
-        <button 
-          class="form__edit" 
-          hidden
-        >
-          edit
-        </button>
-      </div>
-      <div class="form__control">       
-        <button 
-          type="submit" 
-          class="form__create"
-        >
-          create    
-        </button>
-      </div>
+      ${
+        (!model.getEditingStatus())
+          ? model.createBtn
+          : model.editBtn
+      }
       <div class="form__control">
-        <button class="form__empty">clear</button>
+        <button class="form__clear">clear</button>
       </div>
       <div class="form__control">
         <button class="form__delete">delete all</button>

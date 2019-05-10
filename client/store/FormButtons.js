@@ -1,5 +1,0 @@
-class FormButtons {
-  constructor() {
-    
-  }
-}

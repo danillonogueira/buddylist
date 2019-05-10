@@ -7,6 +7,10 @@ class Contacts {
   getContacts() {
     return [].concat(this._contacts);
   }
+  
+  getContact(index) {
+    return this.getContacts()[index];
+  }
 
   deleteContacts() {
     this._contacts.length = 0;
@@ -23,8 +27,8 @@ class Contacts {
     console.log(this._contacts);
   }
 
-  // editContact(contact, contactId) {
-  //   this.removeContact(contactId);
-  //   this.registerContact(contact);
-  // } 
+  editContact(contact, id) {
+    this.removeContact(id);
+    this.registerContact(contact);
+  } 
 }

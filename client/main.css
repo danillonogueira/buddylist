@@ -46,16 +46,12 @@ body {
           flex-direction: column;
 }
 
-.form__create, .form__empty, .form__delete, .form__edit {
+.form__create, .form__clear, .form__delete, .form__edit {
   text-transform: uppercase;
   width: 50%;
 }
 
-.form__edit {
-  display: none;
-}
-
-.view__remove {
+.view__remove, .view__edit {
   text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */

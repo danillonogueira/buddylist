@@ -26,20 +26,17 @@ body {
   }
 
   &__create,
-  &__empty,
+  &__clear,
   &__delete,
   &__edit {
     text-transform: uppercase;
     width: 50%;
   }
-
-  &__edit {
-    display: none;
-  }
 }
 
 .view { 
-  &__remove {
+  &__remove,
+  &__edit {
     text-transform: uppercase;
   }
 }

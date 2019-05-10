@@ -3,7 +3,7 @@ class View {
     this.element = document.querySelector(selector);
   }
 
-  update(model = '') {
+  update(model) {
     this.element.innerHTML = this.template(model);
   }
 }

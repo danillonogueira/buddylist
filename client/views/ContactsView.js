@@ -6,10 +6,10 @@ class ContactsView extends View {
         .map((contact, index) => {
           return `
             <ul class="view__contact">
-              <li>${contact._name}</li>
-              <li>${contact._surname}</li>
-              <li>${contact._tel}</li>
-              <li>${contact._email}</li>
+              <li>${contact.name}</li>
+              <li>${contact.surname}</li>
+              <li>${contact.tel}</li>
+              <li>${contact.email}</li>
             </ul>
             <button 
               class="view__edit" 
