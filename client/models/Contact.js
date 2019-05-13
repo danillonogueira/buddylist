@@ -6,8 +6,4 @@ class Contact {
     this.email = email;
     Object.freeze(this);
   }
-
-  getFullName() {
-    return `${this.name} ${this.surname}`;
-  }
 }

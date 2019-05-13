@@ -49,6 +49,7 @@ body {
 .form__create, .form__clear, .form__delete, .form__edit {
   text-transform: uppercase;
   width: 50%;
+  margin: 5px 0;
 }
 
 .view__remove, .view__edit {
