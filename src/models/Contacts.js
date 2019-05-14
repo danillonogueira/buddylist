@@ -1,4 +1,4 @@
-class Contacts {
+export class Contacts {
   constructor() {
     this._contacts = [];
     Object.freeze(this);

@@ -1,4 +1,6 @@
-class ContactsView extends View {
+import { View } from './View';
+
+export class ContactsView extends View {
   template(model) {
     return `
       ${model

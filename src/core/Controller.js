@@ -1,4 +1,10 @@
-class Controller {
+import { Contacts } from '../models/Contacts';
+import { ContactsView } from '../views/ContactsView';
+import { FormView } from '../views/FormView';
+import { FormHelper } from '../helpers/FormHelper';
+import { $ } from '../helpers/Alias'
+
+export class Controller {
   constructor() {
     this._contacts = new Contacts();
     this._contactsView = new ContactsView('.view');

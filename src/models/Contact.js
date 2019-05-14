@@ -1,4 +1,4 @@
-class Contact {
+export class Contact {
   constructor(name, surname, tel, email) {
     this.name = name;
     this.surname = surname;

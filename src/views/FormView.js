@@ -1,4 +1,6 @@
-class FormView extends View {
+import { View } from './View';
+
+export class FormView extends View {
   template() {
     return `
       <div class="form__control">

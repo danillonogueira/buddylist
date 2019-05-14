@@ -1,4 +1,7 @@
-const $ = document.querySelector.bind(document);
+import { Controller } from './core/Controller';
+import { $ } from './helpers/Alias'
+import './styles/main.scss';
+
 const controller = new Controller();
 $('.form__clear').addEventListener('click', controller.clearClick.bind(controller));
 $('.form__delete').addEventListener('click', controller.deleteAllClick.bind(controller));

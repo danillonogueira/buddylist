@@ -1,4 +1,7 @@
-class FormHelper {
+import { Contact } from '../models/Contact';
+import { $ } from '../helpers/Alias'
+
+export class FormHelper {
   constructor() {
     this._inputName = $('.form__name');
     this._inputSurname = $('.form__surname');
