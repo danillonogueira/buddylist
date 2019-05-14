@@ -16,8 +16,8 @@ class FormHelper {
       this._inputTel,
       this._inputEmail
     ].forEach(input => input.value = '');
-    this.hideEditBtn();
-    this._createBtn.removeAttribute('hidden');
+    this.resetAndHideEditBtn();
+    this.showCreateBtn();
   }
 
   fillForm(contact) {
@@ -27,13 +27,17 @@ class FormHelper {
     this._inputEmail.value = contact.email;
   }
 
-  hideEditBtn() {
+  resetAndHideEditBtn() {
     this._editBtn.setAttribute('hidden', '');
     this._editBtn.removeAttribute('data-index');
   }
 
   hideCreateBtn() {
     this._createBtn.setAttribute('hidden', '');
+  }
+
+  showCreateBtn() {
+    this._createBtn.removeAttribute('hidden');
   }
 
   createContact() {
@@ -43,5 +47,10 @@ class FormHelper {
       this._inputTel.value,
       this._inputEmail.value
     );
+  }
+
+  showEditBtnAndSetIndex(index) {
+    this._editBtn.removeAttribute('hidden');
+    this._editBtn.setAttribute('data-index', index);
   }
 }

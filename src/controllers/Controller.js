@@ -25,7 +25,7 @@ class Controller {
       this._contactsView.update(this._contacts);
     } catch(err) {
       console.log(err);
-      alert('It was not possible to register the contact');
+      alert('It was not possible to register contact');
     }
   }
 
@@ -58,8 +58,7 @@ class Controller {
     if (event.target.classList.contains('view__edit')) {
       const index = parseInt(event.target.getAttribute('data-index'));
       const contact = this._contacts.getContact(index);
-      $('.form__edit').setAttribute('data-index', index);
-      $('.form__edit').removeAttribute('hidden');
+      this._formHelper.showEditBtnAndSetIndex(index);
       this._formHelper.hideCreateBtn();
       this._formHelper.fillForm({ ...contact });
     }  
