@@ -1,5 +1,10 @@
 # Buddylist
 Sexy personal contact list CRUD app in the making, with the finest of OOP, UI/UX Design and Clean Code principles.
+## Technologies
+HTML5 <br />
+SASS <br />
+JavaScript (AirBnB)<br />
+Parcel.js
 ## Requirements
 Node.js
 ## Running the project
